@@ -1,0 +1,264 @@
+/** {
+    box-sizing: border-box;
+    border: 2px solid tomato
+}*/
+
+body {
+    background-color: #0F2E4C;
+    font-family: "Julius Sans One", monospace;
+}
+
+
+
+a, a:before, a:after {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/******************************************************
+HEADER
+*******************************************************/
+
+.header {
+    box-sizing: border-box;
+    /*background-color: #FFB03B;*/
+    background-color: #1A4C80;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#logoName {
+    font-family: "Rock Salt", monospace;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0em 0em 0.125em #000, .1em .1em .25em #000;
+    margin-top: 0.67em;
+    margin-bottom: 0;
+}
+
+#logoJob {
+    font-family: "Julius Sans One", monospace;
+    color: #fff;
+    font-size: 1em;
+    text-shadow: 0.08em 0.08em 0.2em #000;
+    margin-top: 0.67em;
+    margin-bottom: 0;
+
+}
+/***********************************************
+NAVIGATION
+***********************************************/
+
+nav {
+	background-color: #2E8AE6;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+nav ul {
+ 	margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+
+}
+
+nav a {
+    font-weight: 800;
+ 	padding: 15px 10px;
+ 	color: #fff;
+
+}	
+
+nav .selected {
+    background-color: #246BB2;
+    border: 0.1em solid #0F2E4C;
+}
+
+/**************************************************
+Gallery 
+*****************************************************/
+
+#gallery {
+  	margin: .5em 0 .5em;
+  	padding: 0;
+  	list-style: none;
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;
+}
+
+#gallery li {
+  	width: 100%;
+  	margin: .5em 0 .5em;
+  	background-color: #143D66;
+  	color: #000;
+}
+
+
+
+#gallery li a img {
+  display: block;
+  float: left;
+  width: 50%;
+  height: auto;
+  background-color: #CCCCCC;
+}
+
+
+
+.galleryInfo {
+  	float: right;
+  	width: 50%;
+  	margin: 0;
+  	padding: 0;
+  	font-size: 0.75em;
+  	color: #000;
+  	display: flex;
+  	flex-direction: column;
+}
+
+
+.gal-info {
+  	margin-left: 0.5em;
+  	margin-right: 0.5em;
+  	color: #fff;
+  	line-height: 1.15rem;
+  	/*margin: 0 0 0;*/
+}
+h3.gal-info {
+	box-sizing: border-box;
+	padding-bottom: .15em;
+	margin-bottom: .15em;
+	border-bottom: 1px solid #445362;
+}
+
+p.gal-info {
+  	margin-top: auto;
+  	margin-bottom: auto;
+}
+
+/***********************************************
+ABOUT 
+***********************************************/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	max-width: 90%;
+	margin: 3em auto;
+	color: #fff;
+}
+
+#about-primary img {
+  max-width: 256px;
+}
+
+.profile-photo {
+  max-width: 80%;
+  border-radius: 100%;
+}
+
+
+#about-text {
+	display: block;
+	max-width: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#about-text span {
+  text-align: center;
+}
+
+/***********************************************
+CONTACT
+***********************************************/
+
+#contact-wrapper {
+  align-items: stretch;
+}
+
+#contact-wrapper h3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#contact-primary p {
+  max-width: 80%;
+  padding-left: 1.3em;
+}
+
+.contact-info {
+  padding-left: 0px;
+}
+
+.contact-info li {
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+.contact-info a {
+  padding: 1.3em;
+}
+
+/***********************************************
+FOOTER
+***********************************************/
+#footer {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+#foot-buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #2E8AE6;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer-button,
+#addcrop {
+	color: #fff;
+	margin: 0;
+	padding: 7px 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+#addcrop {
+	font-size: 1em;
+	background-color: #1A4C80;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	color: #fff;
+}
